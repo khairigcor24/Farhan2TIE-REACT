@@ -7,8 +7,8 @@ import Responsive from "./Responsive";
 createRoot(document.getElementById("root"))
         .render(
             <div>
-                {/* <FrameworkList/> */}
+                <FrameworkList/>
                 {/* <FrameworkListSearchFilter/> */}
-                <Responsive/>
+                {/* <Responsive/> */}
             </div>
 )
