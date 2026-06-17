@@ -1,7 +1,7 @@
 import React from 'react';
-import { MdDashboard, MdListAlt, MdPeople } from "react-icons/md";
+import { MdDashboard, MdListAlt, MdPeople, MdInventory, MdNote } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
       const menuClass = ({ isActive }) =>
@@ -40,9 +40,21 @@ export default function Sidebar() {
             </NavLink>
           </li>
           <li>
+            <NavLink id="menu-4" to="/products" className={menuClass}>
+              <MdInventory className="mr-4 text-xl" />
+              <span>Products</span>
+            </NavLink>
+          </li>
+          <li>
             <NavLink id="menu-3" to="/customers" className={menuClass}>
               <MdPeople className="mr-4 text-xl" />
               <span>Customers</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink id="menu-5" to="/notes" className={menuClass}>
+              <MdNote className="mr-4 text-xl" />
+              <span>Notes</span>
             </NavLink>
           </li>
         </ul>
